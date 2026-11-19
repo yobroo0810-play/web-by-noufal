@@ -1,0 +1,528 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Personal website Noufal Rizqi R. - Student & Cyber Analyst Data">
+    <meta name="author" content="Noufal Rizqi R.">
+
+    <title>Noufal Rizqi R. | Personal Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- PRELOADER -->
+    <div id="preloader">
+        <div class="loader-content">
+            <div class="loader-logo">NR.</div>
+            <div class="loader-line">
+                <span></span>
+            </div>
+            <p>INITIALIZING PORTFOLIO...</p>
+        </div>
+    </div>
+
+    <!-- BACKGROUND -->
+    <canvas id="particles"></canvas>
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+
+    <!-- NAVBAR -->
+    <header class="navbar" id="navbar">
+
+        <a href="#home" class="logo">
+            NR<span>.</span>
+        </a>
+
+        <nav class="nav-menu" id="navMenu">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#education" class="nav-link">Education</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+
+            <button class="icon-button" id="themeToggle"
+                aria-label="Ganti tema" title="Ganti tema">
+                ☀
+            </button>
+
+            <button class="icon-button" id="musicToggle"
+                aria-label="Putar atau hentikan musik" title="Musik">
+                ♪
+            </button>
+
+            <button class="menu-toggle" id="menuToggle"
+                aria-label="Buka navigasi">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+    </header>
+
+    <audio id="backgroundMusic" loop>
+        <source src="assets/music.mp3" type="audio/mpeg">
+    </audio>
+
+    <main>
+
+        <!-- HOME / HERO -->
+        <section class="hero section" id="home">
+
+            <div class="hero-content reveal">
+
+                <div class="availability">
+                    <span class="status-dot"></span>
+                    WELCOME TO MY PERSONAL WEBSITE
+                </div>
+
+                <p class="hero-greeting">Hello, I'm</p>
+
+                <h1>
+                    Noufal Rizqi
+                    <span class="gradient-text">R.</span>
+                </h1>
+
+                <h2 class="hero-role">
+                    I'm a <span id="typingText"></span><span class="cursor">|</span>
+                </h2>
+
+                <p class="hero-description">
+                    Saya adalah seorang pelajar yang tertarik dengan
+                    dunia teknologi dan pemrograman. Saya senang
+                    mempelajari hal baru, mengembangkan kemampuan,
+                    dan menciptakan sesuatu melalui teknologi.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        Explore My Projects ↗
+                    </a>
+
+                    <a href="#about" class="btn btn-outline">
+                        More About Me
+                    </a>
+                </div>
+
+                <div class="social-text">
+                    <span>LEARNING</span>
+                    <span>•</span>
+                    <span>CREATING</span>
+                    <span>•</span>
+                    <span>INNOVATING</span>
+                </div>
+
+            </div>
+
+            <div class="hero-visual reveal">
+
+                <div class="profile-card">
+
+                    <div class="profile-card-top">
+                        <span class="card-dot red"></span>
+                        <span class="card-dot yellow"></span>
+                        <span class="card-dot green"></span>
+                        <span class="card-label">MY PROFILE</span>
+                    </div>
+
+                    <div class="profile-image">
+                        <img
+                            src="assets/profile.jpg"
+                            alt="Foto profil Noufal"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+
+                        <div class="profile-placeholder">
+                            NR.
+                        </div>
+                    </div>
+
+                    <div class="profile-info">
+                        <h3>Noufal Rizqi R.</h3>
+                        <p>Student & Cyber Analyst Data</p>
+                    </div>
+
+                    <div class="profile-status">
+                        <span class="status-dot"></span>
+                        Always Learning
+                    </div>
+
+                </div>
+
+                <div class="floating-card floating-one">
+                    <span>💻</span>
+                    <div>
+                        <strong>Technology</strong>
+                        <small>My Interest</small>
+                    </div>
+                </div>
+
+                <div class="floating-card floating-two">
+                    <span>🚀</span>
+                    <div>
+                        <strong>Creative Mind</strong>
+                        <small>Keep Growing</small>
+                    </div>
+                </div>
+
+            </div>
+
+            <a href="#about" class="scroll-indicator">
+                SCROLL TO EXPLORE
+                <span>↓</span>
+            </a>
+
+        </section>
+
+        <!-- ABOUT -->
+        <section class="section about-section" id="about">
+
+            <div class="section-heading reveal">
+                <span class="section-tag">01 / ABOUT ME</span>
+                <h2>Get To Know <span class="gradient-text">Me.</span></h2>
+                <p>A little introduction about who I am.</p>
+            </div>
+
+            <div class="about-grid">
+
+                <div class="about-text reveal">
+                    <h3>Who Am I?</h3>
+
+                    <p>
+                        Halo! Saya Noufal Rizqi R. Saya adalah seorang
+                        pelajar yang memiliki ketertarikan besar terhadap
+                        teknologi, komputer, dan dunia pemrograman.
+                    </p>
+
+                    <p>
+                        Saya senang mengeksplorasi berbagai hal baru,
+                        terutama pengembangan website, analisis data,
+                        dan teknologi informasi.
+                    </p>
+
+                    <p>
+                        Bagi saya, setiap proses belajar merupakan
+                        kesempatan untuk berkembang dan menciptakan
+                        sesuatu yang bermanfaat.
+                    </p>
+
+                    <a href="#contact" class="text-link">
+                        Let's Connect ↗
+                    </a>
+                </div>
+
+                <div class="about-details reveal">
+
+                    <div class="detail-card">
+                        <span class="detail-icon">👨‍🎓</span>
+                        <div>
+                            <small>Full Name</small>
+                            <h4>Noufal Rizqi R.</h4>
+                        </div>
+                    </div>
+
+                    <div class="detail-card">
+                        <span class="detail-icon">💻</span>
+                        <div>
+                            <small>Interest</small>
+                            <h4>Technology & Programming</h4>
+                        </div>
+                    </div>
+
+                    <div class="detail-card">
+                        <span class="detail-icon">📊</span>
+                        <div>
+                            <small>Focus</small>
+                            <h4>Data & Cyber Technology</h4>
+                        </div>
+                    </div>
+
+                    <div class="detail-card">
+                        <span class="detail-icon">🌱</span>
+                        <div>
+                            <small>Current Status</small>
+                            <h4>Student & Lifelong Learner</h4>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section class="section" id="skills">
+
+            <div class="section-heading reveal">
+                <span class="section-tag">02 / MY SKILLS</span>
+                <h2>Things I'm <span class="gradient-text">Learning.</span></h2>
+                <p>Technologies and skills I am exploring.</p>
+            </div>
+
+            <div class="skills-grid">
+
+                <div class="skill-card reveal">
+                    <div class="skill-icon">🌐</div>
+                    <h3>HTML</h3>
+                    <p>Website Structure</p>
+                    <div class="skill-bar">
+                        <span style="--skill-width:65%"></span>
+                    </div>
+                    <small>Learning Progress</small>
+                </div>
+
+                <div class="skill-card reveal">
+                    <div class="skill-icon">🎨</div>
+                    <h3>CSS</h3>
+                    <p>Web Design & Styling</p>
+                    <div class="skill-bar">
+                        <span style="--skill-width:50%"></span>
+                    </div>
+                    <small>Learning Progress</small>
+                </div>
+
+                <div class="skill-card reveal">
+                    <div class="skill-icon">⚡</div>
+                    <h3>JavaScript</h3>
+                    <p>Web Interactivity</p>
+                    <div class="skill-bar">
+                        <span style="--skill-width:35%"></span>
+                    </div>
+                    <small>Learning Progress</small>
+                </div>
+
+                <div class="skill-card reveal">
+                    <div class="skill-icon">🐍</div>
+                    <h3>Python</h3>
+                    <p>Programming Language</p>
+                    <div class="skill-bar">
+                        <span style="--skill-width:40%"></span>
+                    </div>
+                    <small>Learning Progress</small>
+                </div>
+
+                <div class="skill-card reveal">
+                    <div class="skill-icon">📊</div>
+                    <h3>Data Analysis</h3>
+                    <p>Data & Information</p>
+                    <div class="skill-bar">
+                        <span style="--skill-width:25%"></span>
+                    </div>
+                    <small>Learning Progress</small>
+                </div>
+
+                <div class="skill-card reveal">
+                    <div class="skill-icon">🔐</div>
+                    <h3>Cyber Security</h3>
+                    <p>Security Fundamentals</p>
+                    <div class="skill-bar">
+                        <span style="--skill-width:20%"></span>
+                    </div>
+                    <small>Learning Progress</small>
+                </div>
+
+            </div>
+
+            <p class="skills-note reveal">
+                * Persentase merupakan ilustrasi progres belajar,
+                bukan hasil pengujian kompetensi.
+            </p>
+
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="section" id="projects">
+
+            <div class="section-heading reveal">
+                <span class="section-tag">03 / MY PROJECTS</span>
+                <h2>Selected <span class="gradient-text">Works.</span></h2>
+                <p>Some projects and experiments I have worked on.</p>
+            </div>
+
+            <div class="projects-grid">
+
+                <article class="project-card reveal">
+                    <div class="project-number">PROJECT 01</div>
+                    <div class="project-visual project-purple">
+                        <span>🌐</span>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">WEB DEVELOPMENT</span>
+                        <h3>Personal Website</h3>
+                        <p>
+                            Website pribadi sebagai media untuk
+                            memperkenalkan profil, kemampuan,
+                            dan hasil karya.
+                        </p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <button class="project-button"
+                            data-project="personal">
+                            View Details ↗
+                        </button>
+                    </div>
+                </article>
+
+                <article class="project-card reveal">
+                    <div class="project-number">PROJECT 02</div>
+                    <div class="project-visual project-blue">
+                        <span>📊</span>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">DATA & PROGRAMMING</span>
+                        <h3>Student Data System</h3>
+                        <p>
+                            Konsep aplikasi sederhana untuk
+                            mengelola data siswa menggunakan
+                            pemrograman.
+                        </p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Data</span>
+                        </div>
+                        <button class="project-button"
+                            data-project="student">
+                            View Details ↗
+                        </button>
+                    </div>
+                </article>
+
+                <article class="project-card reveal">
+                    <div class="project-number">PROJECT 03</div>
+                    <div class="project-visual project-green">
+                        <span>🔐</span>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">CYBER TECHNOLOGY</span>
+                        <h3>Cyber Security Study</h3>
+                        <p>
+                            Dokumentasi pembelajaran mengenai
+                            keamanan digital dan dasar-dasar
+                            keamanan informasi.
+                        </p>
+                        <div class="project-tags">
+                            <span>Security</span>
+                            <span>Research</span>
+                        </div>
+                        <button class="project-button"
+                            data-project="cyber">
+                            View Details ↗
+                        </button>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- EDUCATION -->
+        <section class="section" id="education">
+
+            <div class="section-heading reveal">
+                <span class="section-tag">04 / EDUCATION</span>
+                <h2>My <span class="gradient-text">Journey.</span></h2>
+                <p>My educational journey and learning process.</p>
+            </div>
+
+            <div class="timeline">
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-date">CURRENT</span>
+                        <h3>Senior High School / Vocational School</h3>
+                        <p>
+                            Sedang menjalani pendidikan dan
+                            mengembangkan kemampuan di bidang
+                            teknologi serta pemrograman.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-date">PREVIOUS</span>
+                        <h3>Junior High School</h3>
+                        <p>
+                            Mulai mengenal dunia teknologi,
+                            komputer, dan dasar-dasar informatika.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- CONTACT -->
+        <section class="section contact-section" id="contact">
+
+            <div class="contact-box reveal">
+
+                <span class="section-tag">05 / CONTACT ME</span>
+
+                <h2>Let's Create Something <span class="gradient-text">Amazing.</span></h2>
+
+                <p>
+                    Punya ide, ingin berdiskusi tentang teknologi,
+                    atau sekadar ingin berkenalan? Silakan hubungi saya.
+                </p>
+
+                <a href="mailto:emailkamu@example.com"
+                    class="btn btn-primary">
+                    Send Me an Email ↗
+                </a>
+
+                <div class="contact-note">
+                    Replace the email address with your own email.
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <a href="#home" class="logo">NR<span>.</span></a>
+
+        <p>
+            © <span id="currentYear"></span>
+            Noufal Rizqi R. All Rights Reserved.
+        </p>
+
+        <a href="#home" class="back-top">Back to Top ↑</a>
+    </footer>
+
+    <!-- PROJECT MODAL -->
+    <div class="modal" id="projectModal" aria-hidden="true">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose"
+                aria-label="Tutup">&times;</button>
+            <span class="section-tag">PROJECT DETAILS</span>
+            <h2 id="modalTitle">Project Title</h2>
+            <p id="modalDescription"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
